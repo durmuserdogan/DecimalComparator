@@ -1,9 +1,9 @@
 public class DecimalComparator {
     public static boolean areEqualByThreeDecimalPlaces(double one, double two){
-        double oneNum = one*10000;
-        double twoNum = two*10000;
+        int oneNum = (int) ((double)one*1000);
+        int twoNum = (int) ((double)two*1000);
 
-        if ((int)oneNum==twoNum){
+        if (oneNum==twoNum){
             return true;
         }else{
             return false;
